@@ -1,5 +1,13 @@
 # Predicting-Student-Performance
 
+**Problem:**
+Students exhibit significant variation in academic performance influenced by study habits, parental support, tutoring, and extracurricular participation. A lack of understanding of the key factors driving these outcomes makes it difficult for schools to provide targeted interventions and support at-risk students.
+
+**Goals:**
+1. Predict students’ Grade Class based on demographic details, study habits, parental involvement, and extracurricular activities.
+2. Identify the most influential factors affecting academic achievement.
+3. Provide actionable recommendations for effective educational interventions to improve student outcomes.
+
 **Dataset:**
 StudentID: A unique identifier assigned to each student (1001 to 3392).
 > Demographic Details
@@ -41,3 +49,18 @@ StudentID: A unique identifier assigned to each student (1001 to 3392).
   - 2: 'C' (2.5 <= GPA < 3.0)
   - 3: 'D' (2.0 <= GPA < 2.5)
   - 4: 'F' (GPA < 2.0)
+ 
+**Insight and Recommendation:**
+- For students:
+  - Take advantage of tutoring if there is material that you do not understand.
+  - Increase extracurricular and music activities to maintain mental balance and focus on learning.
+  - Keep absences to a minimum so you don't miss any material.
+  - Add weekly study time to reinforce your understanding of the material.
+- For schools:
+  - Utilize tutoring if there is material that is not understood.
+  - Increase extracurricular and music activities to maintain mental balance and focus on learning.
+  - Keep absences to a minimum so as not to miss material.
+  - Add weekly study time to reinforce understanding of the material.
+- For prediction models:
+  - Want high accuracy → Gradient Boosting
+  - Want a more stable model with better generalization → Ada Boost
